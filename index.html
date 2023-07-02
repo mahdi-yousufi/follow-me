@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="content">
+            <div class="user"><img src="WhatsApp Image 2023-06-12 at 09.51.30.jpg" alt=""></div>
+            <header>Mahdi Yousufi</header>
+            <div class="follo-us">Follow Me On</div>
+            <div class="icons">
+                <a href="#"><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+                <a href="#"><span class="fab fa-github"></span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $('body').mousemove(function (p) {
+            let rotateX = -($(window).innerWidth() / 2 - p.pageX)/20
+            let rotateY = -($(window).innerHeight() / 2 - p.pageY)/20
+            $(".card").css("transform","rotateX("+rotateX+"deg) rotateY("+rotateY+"deg)")
+        })
+        $(document).mouseout(function(){
+            $("card").css('transform',"")
+        })
+    </script>
+</body>
+
+</html>

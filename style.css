@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "regular";
+    src: url("Bahij/Bahij\ Helvetica\ Neue-Bold_0.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "regular";
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    background: #076480;
+
+}
+
+.card {
+    background: white;
+    height: 380px;
+    width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+
+
+
+}
+
+.card .content {
+    color: #202020;
+    justify-content: center;
+    text-align: center;
+    transform-style: preserve-3d;
+    /* display: f; */
+
+}
+
+.content .user {
+    height: 120px;
+    width: 120px;
+    /* background: #33ffcf; */
+    border: 1px solid #1affc9;
+    border-radius: 50%;
+    margin: 10x auto;
+    transform: translateZ(50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.user img {
+    /* color: white; */
+    /* font-size: 40ox; */
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+    /* line-height: 100px; */
+
+}
+
+.icons a span:hover {
+    background-color: #202020;
+    color: white;
+}
+
+.icons a span {
+    transition: 0.5s ease;
+}
+
+.content header {
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 600;
+    transform: translateZ(50px);
+}
+
+.content .follo-us {
+    font-size: 23px;
+    font-weight: 600;
+    transform: translateZ(50px);
+}
+
+.content .icons {
+    margin: 20px 0 10px 0;
+    transform: translateZ(50px);
+}
+
+.icons a {
+    margin: 0 4px;
+}
+
+.icons a span {
+    height: 45px;
+    background: #0640df;
+    width: 45px;
+    border: 1px solid #1affc9;
+    line-height: 44px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+
+}
